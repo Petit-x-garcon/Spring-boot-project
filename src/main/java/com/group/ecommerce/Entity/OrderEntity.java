@@ -15,7 +15,7 @@ public class OrderEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")
-    private String orderId;
+    private Long orderId;
 
     private String status = OrderStatus.PENDING.name();
 
